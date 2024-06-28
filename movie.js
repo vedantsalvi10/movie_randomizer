@@ -56,6 +56,7 @@ const movie = async ()=>{
   </div>
 `;
 }
+movie();
 function openz(){
   movie();
 }
