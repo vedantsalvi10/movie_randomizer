@@ -1,4 +1,4 @@
-const URL = " http://www.omdbapi.com/?i=tt1190634&apikey=60475f01";
+const URL = " https://www.omdbapi.com/?i=tt1190634&apikey=60475f01";
 
 
 const movie = async ()=>{
