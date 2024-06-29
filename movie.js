@@ -19,7 +19,7 @@ const movie = async (URL)=>{
 <div class = "imdb">
 <div class="imdb_rating">
 <div class="rating">
-     <div class="star"><img src="/pngwing.com.png" alt=""></div> 
+     <div class="star"><img src="pngwing.com.png" alt=""></div> 
      <div class="right">
        <div class="rate">Imdb rating</div>
        <div class="value">${data.imdbRating}</div>
