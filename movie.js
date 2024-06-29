@@ -1,16 +1,24 @@
-const URL = " https://www.omdbapi.com/?i=tt1190634&apikey=60475f01";
 
 
-const movie = async ()=>{
+
+
+const movie = async (URL)=>{
   let response = await  fetch(URL);
   console.log(response);
   let data = await response.json();
   console.log(data);
    document.querySelector('.main').innerHTML = `
-<div class="tittle_contain">
  <div class="title"><h1>${data.Title} </h1></div>
- <div class="imdb_rating">
-   <div class="rating">
+    
+<div class="layout">
+<div class="poster">
+<img src="${data.Poster}"/>
+</div>
+
+</div>
+<div class = "imdb">
+<div class="imdb_rating">
+<div class="rating">
      <div class="star"><img src="/pngwing.com.png" alt=""></div> 
      <div class="right">
        <div class="rate">Imdb rating</div>
@@ -23,12 +31,7 @@ const movie = async ()=>{
        <div class="value">${data.imdbVotes}</div>
    </div>
  </div>
-</div>
-<div class="layout">
-<div class="poster">
-<img src="${data.Poster}"/>
-</div>
-</div>
+ </div>
 <div class="information">
     <div class="big_data">
       <div class="plot">
@@ -53,10 +56,17 @@ const movie = async ()=>{
     <div class="seasons sd"><h4>Seasons:</h4><p>${data.totalSeasons}</p></div>
     <div class="country sd"><h4>Country:</h4><p>${data.Country}</p></div>
     </div>
+    <div class = "line"></div>
   </div>
 `;
+window.location = url;
 }
-movie();
+
 function openz(){
-  movie();
+  let random = Math.floor( Math.random()*(30-1)+1); 
+  let id = map.get(`${random}`);     
+  const URL = `https://www.omdbapi.com/?i=${id}&apikey=60475f01`;
+  console.log(random);
+  movie(URL);
+ 
 }
