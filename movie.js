@@ -59,7 +59,6 @@ const movie = async (URL)=>{
     <div class = "line"></div>
   </div>
 `;
-window.location = url;
 }
 
 function openz(){
