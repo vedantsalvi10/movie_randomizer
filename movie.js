@@ -56,7 +56,9 @@ const movie = async (URL)=>{
     <div class="seasons sd"><h4>Seasons:</h4><p>${data.totalSeasons}</p></div>
     <div class="country sd"><h4>Country:</h4><p>${data.Country}</p></div>
     </div>
-    <div class = "line"></div>
+    <div class="button1">
+                            <button class="generate1" onclick="">Generate</button>
+                            </div> 
   </div>
 `;
 }
