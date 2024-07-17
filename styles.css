@@ -1,8 +1,10 @@
+/* this is for all the page */
 *{
   margin:0;
   background-color: black;
   scroll-behavior: smooth;
 }  
+                         /* header */
 .image_head{
   height: inherit;
   width: inherit;
