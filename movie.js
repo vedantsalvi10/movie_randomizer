@@ -57,7 +57,7 @@ const movie = async (URL)=>{
     <div class="country sd"><h4>Country:</h4><p>${data.Country}</p></div>
     </div>
     <div class="button1">
-                            <button class="generate1" onclick="">Generate</button>
+                            <button class="generate1" onclick="openz()">Generate</button>
                             </div> 
   </div>
 `;
