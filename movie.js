@@ -57,13 +57,13 @@ const movie = async (URL)=>{
     <div class="country sd"><h4>Country:</h4><p>${data.Country}</p></div>
     </div>
     <div class="button1">
-                            <button class="generate1" onclick="openz()">Generate</button>
+                            <button class="generate1" onclick="openmm()">Generate</button>
                             </div> 
   </div>
 `;
 }
 
-function openz(){
+function openmm(){
   let random = Math.floor( Math.random()*(30-1)+1); 
   let id = map.get(`${random}`);     
   const URL = `https://www.omdbapi.com/?i=${id}&apikey=60475f01`;
