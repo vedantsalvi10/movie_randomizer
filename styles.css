@@ -1,13 +1,15 @@
 /* this is for all the page */
 
-  
+  body{
+    background-color: black;
+  }
 
 *{
   margin:0;
-  background-color: black;
   scroll-behavior: smooth;
 }  
                          /* header */
+/* top image for the website */
 .image_head{
   height: inherit;
   width: inherit;
@@ -23,19 +25,20 @@
 .header{
   position: relative;
   height: 730px  ;
-  background-color: yellow;
+  background-color: rgb(26, 26, 21);
 }
+/* lines inside the header */
 .line1{
   top:320px;
  position: absolute;
- color: rgb(91, 88, 88);
+ color: rgb(148, 146, 146);
  background-color: transparent;
  font-size: 3.5rem;
 }
 .line2{
   top: 380px;
  position: absolute;
- color: rgb(0, 0, 0);
+ color: rgb(220, 214, 214);
  background-color: transparent;
  font-size: 3.5rem;
 }
@@ -46,6 +49,9 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+
+/* generate button */
+
 .generate{
   background-color: black;
   padding:  0px 80px;
@@ -53,16 +59,16 @@
   font-size: 1.8rem;
   
   border-radius: 30px;
-  border: 4px solid rgb(249, 233, 9);
+  border: 4px solid rgb(244, 244, 240);
   height: 70px;
   color: white;
   transition: 0.5s;
 }
 .generate:hover{
- background-color: rgb(249, 233, 9);
+  background-color: rgb(232, 232, 223);
  color: black;
  border: 2px solid rgb(13, 13, 12);
- box-shadow: 0px 0px 20px black;
+ box-shadow: 0px 0px 10px rgb(240, 238, 238);
 }
 .button{
   position: absolute;
@@ -74,6 +80,7 @@
   align-items: center;
   bottom: 100px;
 }
+/* the 2 popcorn images at the bottom */
 .popcorn img{
  position: absolute; 
  background-color: transparent;
@@ -87,9 +94,11 @@
  bottom: 0;
  right: 0;
 }
+                              /* main body for the webpage */
 .main{
   color: rgb(214, 214, 214);
   margin-bottom: 20px;
+  background-color: black;
 }
 .title{
   display: flex;
@@ -102,6 +111,8 @@
  
 
 }
+
+/* imdb ratings */
 .imdb{
   display: flex ;
   justify-content: center;
@@ -136,11 +147,15 @@
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* poster */
 .poster img{
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   align-items: center;
   border-radius: 30px;
+  border: 10px solid white;
+  box-shadow: 0px 0px 10px white;
 }
 .layout{
   width: 100%;
@@ -149,34 +164,50 @@
   margin-bottom: 30px;
 }
 
-
+/* the information block which contains the plot actors and all the info */
 .information{
+  margin-top: 20px;
   position: relative;
-  height: 400px;
+  height: 300px;
   display: grid;
   grid-template-columns: 70% 30%;
   z-index: 200;
-  margin-left: 70px;
+  gap: 20px;
+  padding: 10px 40px;
 }
+
+/* the left block of the information */
 .big_data{
   display: grid;
+  border: 5px solid white; 
+  background-color: rgb(39, 38, 38);
   grid-template-rows: 50% 30% 20%;
   align-items: center;
+  border-radius: 15px;
+  padding: 0px 20px;
   justify-content: center;
+  
 }
 .plot ,.actors ,.awards{
   display: grid;
   grid-template-columns: 20% 80%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  background-color: rgb(39, 38, 38);
 }
+
+/* the right block of the information */
 .small_data{
-padding-top: 50px;
 display: grid;
-padding-left: 30px;
+padding: 15px 30px;
 grid-template-rows: repeat(1fr);
-border-left: 5px solid rgb(186, 186, 185);
+border-radius: 15px;
+border: 5px solid white; 
+overflow: hidden;
+background-color: rgb(39, 38, 38);
 }
+
+/* the right block info in particular */
 .sd{
   display: grid;
   grid-template-columns: 40% 60%;
@@ -184,5 +215,34 @@ border-left: 5px solid rgb(186, 186, 185);
   font-family: Arial, Helvetica, sans-serif;
   gap: 15px;
   font-size: 1rem;
+  background-color: rgb(39, 38, 38);
 }
+/* botton at the bottom */
+.generate1{
+  background-color: black;
+  padding:  0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  height: 50px;
 
+  border-radius: 15px;
+  border: 5px solid rgb(244, 244, 240);
+  color: white;
+  transition: 0.2s;
+}
+.generate1:hover{
+ background-color: rgb(232, 232, 223);
+ color: black;
+ opacity: 0.9;
+ font-family: Arial, Helvetica, sans-serif;
+ border: 5px solid rgb(13, 13, 12);
+ box-shadow: 0px 0px 10px rgb(240, 238, 238);
+}
+.button1{
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+}
