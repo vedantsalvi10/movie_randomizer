@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1000px){
 /* this is for all the page */
 
   body{
@@ -245,4 +246,5 @@ background-color: rgb(39, 38, 38);
   justify-content: center;
   align-items: center;
   margin-left: 200px;
+}
 }
